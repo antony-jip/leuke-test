@@ -26,9 +26,10 @@ This repository uses the [Claude Code GitHub Action](https://github.com/anthropi
 
 1. **Read Before Modifying**: Always read and understand existing files before making changes
 2. **Follow the Style Guide**: Adhere strictly to the design system documented below
-3. **Minimal Changes**: Make only the changes necessary to complete the requested task
-4. **Clear Commits**: Use descriptive commit messages
-5. **Security First**: Never introduce security vulnerabilities
+3. **Follow the Tone of Voice**: Use jij-vorm, avoid greenwashing language
+4. **Minimal Changes**: Make only the changes necessary to complete the requested task
+5. **Clear Commits**: Use descriptive commit messages
+6. **Security First**: Never introduce security vulnerabilities
 
 ### Branch Strategy
 
@@ -44,6 +45,160 @@ This repository uses the [Claude Code GitHub Action](https://github.com/anthropi
 ```
 
 Types: `feat`, `fix`, `docs`, `chore`, `refactor`, `style`
+
+---
+
+# Sitemap Overview
+
+**Domain:** duurzame-vlaggen.nl | **Total Pages:** ~30
+
+## URL Structure
+
+| Section | URLs |
+|---------|------|
+| **Homepage** | `/` |
+| **Configurator** | `/bestel/`, `/bestel/mastvlaggen/`, `/bestel/gevelvlaggen/`, `/bestel/baniervlaggen/`, `/bestel/beachvlaggen/` |
+| **B2B Landings** | `/voor-bedrijven/`, `/voor-gemeenten/`, `/voor-verenigingen/`, `/offerte-aanvragen/` |
+| **Materiaal** | `/materiaal/`, `/materiaal/flag-ciclo-technologie/`, `/materiaal/certificeringen/` |
+| **CSRD Hub** | `/csrd/`, `/csrd/wat-is-csrd/`, `/csrd/vlaggen-en-csrd/`, `/csrd/microplastics-probleem/` |
+| **Tools** | `/bereken-besparing/`, `/offerte-aanvragen/` |
+| **Blog** | `/blog/`, `/blog/[slug]/` |
+| **Bedrijfsinfo** | `/over-ons/`, `/contact/`, `/veelgestelde-vragen/` |
+| **WooCommerce** | `/winkelwagen/`, `/afrekenen/`, `/mijn-account/` |
+
+---
+
+# Tone of Voice & Messaging
+
+**Core Principle:** Data-driven. Direct. Menselijk. Jij-vorm.
+
+## Brand Voice DNA
+
+```
+WE ARE:                          WE ARE NOT:
+├─ Data-Driven                   ├─ Hippie-Duurzaam ("Red de planeet!")
+├─ Direct                        ├─ Corporate-Saai
+├─ Expert                        ├─ Tech-Arrogant
+├─ Innovatief                    ├─ Greenwashing
+└─ Menselijk (jij-vorm)          └─ Vaag
+```
+
+## Jij-Vorm Rules (ALWAYS)
+
+```
+✅ USE:                          ❌ NEVER:
+- "Bereken je CSRD-impact"       - "Bereken uw impact"
+- "Vraag je offerte aan"         - "Vraagt u een offerte aan"
+- "Check je besparing"           - Formal u-vorm
+
+Always lowercase 'j' (except at start of sentence)
+```
+
+## Greenwashing Rules - BANNED WORDS
+
+**NEVER use these vague terms:**
+- "Eco-friendly"
+- "Groen" (as description)
+- "Milieuvriendelijk"
+- "Duurzaam" (without specification)
+- "Goed voor de planeet"
+- "Natuurlijk" (as selling point)
+- "Groene keuze"
+
+**Replace with concrete language:**
+
+| Banned | Use Instead |
+|--------|-------------|
+| "Eco-friendly" | "Lost op in 2-3 jaar zonder microplastics" |
+| "Milieuvriendelijk" | "0% microplastic residue. Geen sporen." |
+| "Duurzaam" | "Biologisch afbreekbaar volgens ASTM D6866" |
+| "Groen" | "CSRD-compliant. Voldoet aan ESRS E2-5." |
+| "Goed voor de planeet" | "Bespaart 700.000 microplastic deeltjes per vlag" |
+
+## Primary Messages (Use 2 of 3 on every page)
+
+1. **ZERO MICROPLASTIC**: "0% microplastic residue. Geen sporen."
+2. **CSRD COMPLIANT**: "Voldoet aan ESRS E2-5 rapportage-eisen."
+3. **BIOLOGISCH AFBREEKBAAR**: "Lost volledig op in 2-3 jaar."
+
+## Copy Formulas
+
+**Headlines (H1):** `[PROBLEEM OPLOSSEN] + [CONCRETE BELOFTE]`
+```
+✅ "Vlaggen die verdwijnen. Zero plastic."
+✅ "CSRD-compliant binnen 2 weken. Inclusief certificaten."
+❌ "Samen bouwen aan een duurzame toekomst"
+```
+
+**Subheadlines:** `[SPECIFICATIE] + [MEETBAAR RESULTAAT]`
+```
+✅ "Lost op in 2-3 jaar. Geen microplastics. Klaar."
+❌ "Superduurzaam en eco-vriendelijk"
+```
+
+**CTA Buttons:** `[WERKWOORD] + [CONCREET RESULTAAT]`
+```
+✅ "Bereken je besparing"
+✅ "Vraag offerte aan"
+✅ "Download CSRD checklist"
+❌ "Ontdek meer"
+❌ "Klik hier"
+```
+
+**Feature Lists:** Meetbare specs only
+```
+✅ Lost op in 2-3 jaar
+✅ 0% microplastic residue
+✅ Bespaart 700.000 deeltjes per vlag
+❌ Superduurzaam
+❌ Eco-friendly
+```
+
+## Tone Per Context
+
+| Context | Tone Level | Example |
+|---------|------------|---------|
+| Homepage/Hero | Bold 90/100 | "Vlaggen die verdwijnen. Zero plastic." |
+| Product Pages | Informative 70/100 | "Lost volledig op in 2-3 jaar." |
+| CSRD Hub | Expert 85/100 | "Voldoet aan ESRS E2-5 rapportage-eisen" |
+| Blog | Educational 60/100 | "CSRD verplicht bedrijven..." |
+| Forms | Simple 40/100 | "Bedrijfsnaam" (not "Hoe heet je bedrijf?") |
+| Errors | Helpful 50/100 | "Check even je e-mailadres" |
+
+## Microcopy Patterns
+
+**Form Labels:** Short, no questions
+```
+✅ "Bedrijfsnaam" | "E-mailadres" | "Aantal vlaggen"
+❌ "Hoe heet je bedrijf?" | "Wat is je e-mailadres?"
+```
+
+**Placeholders:** Concrete examples
+```
+✅ placeholder="Green Solutions BV"
+❌ placeholder="Vul hier je bedrijfsnaam in"
+```
+
+**Error Messages:** Problem + Solution
+```
+✅ "Check even je e-mailadres (bijv. naam@bedrijf.nl)"
+❌ "Invalid email format"
+```
+
+**Success Messages:** Confirmation + Next step
+```
+✅ "Offerte verstuurd! Check je inbox binnen 5 minuten."
+❌ "Success!"
+```
+
+## Target Audience Tone
+
+| Audience | Key Message | Tone |
+|----------|-------------|------|
+| Grote Bedrijven (250+) | "Voldoe aan ESRS E2-5" | Expert 85/100 |
+| MKB (50-250) | "CSRD-proof voor als het verplicht wordt" | Pragmatic 70/100 |
+| Gemeenten | "Geef het goede voorbeeld" | Public Value 75/100 |
+| Verenigingen/Events | "Event zonder plastic sporen" | Energetic 60/100 |
 
 ---
 
@@ -404,4 +559,26 @@ label {
 
 ---
 
-*Design System Version: 5.0.0 | Last updated: December 2024*
+# Quick Reference Checklist
+
+## Before Publishing Any Copy
+
+- [ ] Is it in jij-vorm? (lowercase j)
+- [ ] Is it data-driven? (numbers, facts)
+- [ ] Is it specific? (no vague claims)
+- [ ] Have I avoided greenwashing words?
+- [ ] Does it include at least 1 primary message?
+- [ ] Does the tone match the context?
+- [ ] Is there a clear next step (CTA)?
+
+## The Golden Rules
+
+1. **DATA > EMOTION**: "700.000 deeltjes bespaard" not "Goed voor de natuur"
+2. **SPECIFIC > VAGUE**: "Lost op in 2-3 jaar" not "Duurzaam"
+3. **JIJ-VORM > U-VORM**: "Bereken je besparing" not "Bereken uw besparing"
+4. **DIRECT > FLUFFY**: "Zero plastic. Klaar." not "Een stap richting een betere toekomst"
+5. **PROOF > CLAIMS**: "Voldoet aan ESRS E2-5" not "Beste keuze voor het milieu"
+
+---
+
+*Design System: V5.0.0 | Tone of Voice: V1.0 | Last updated: December 2024*
